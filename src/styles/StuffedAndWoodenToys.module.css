@@ -1,0 +1,151 @@
+.card__container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    padding: 150px 20px 120px 20px;
+}
+
+.card {
+    background-color: #FFC107; /* цвет карточки */
+    border-radius: 20px;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 570px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:nth-child(2) {
+    background-color: #FF4081; /* другой цвет для второй карточки */
+}
+
+.card__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    position: relative;
+}
+
+.card__image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex: 1;
+    position: absolute;
+    bottom: 53px;
+}
+
+.card__image:last-child {
+    right: 0;
+}
+
+.card__text {
+    flex: 1;
+    margin-left: 65px;
+    padding: 48px 25px;
+    z-index: 1;
+}
+
+.card__text:nth-child(2) {
+    text-align: right;
+}
+
+.card__text h2 {
+    font-weight: 400;
+    font-family: "Varela Round", sans-serif; 
+    font-size: 28px;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 24px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #111111;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    margin-right: 23%;
+}
+.btn:nth-child(2) {
+    margin-left: 16%;
+}
+
+.btn:hover {
+    background-color: #fff3cd;
+}
+
+.card:nth-child(2) .btn:hover {
+    background-color: #ff80ab; /* цвет при наведении для второй карточки */
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .card__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card__image {
+        z-index: -1;
+    }
+
+    .card__text {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .btn:nth-child(2) {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 540px) {
+    .card__container {
+        padding: 90px 20px;
+    }
+
+    .card__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card__image {
+        z-index: -1;
+        bottom: 21%;
+    }
+
+    .card__text {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0;
+        padding: 0;
+    }
+    .card__text:nth-child(2) {
+        text-align: center;
+    }
+
+    .card__text h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .btn {
+        margin-right: 0;
+    }
+
+    .btn:nth-child(2) {
+        margin-left: 0;
+    }
+
+}

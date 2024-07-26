@@ -1,0 +1,12 @@
+.socialmediaContent a {
+    font-size: 18px;
+    color: #fff;
+    padding: 5px;
+    opacity: 1;
+    transition: all .3s linear;
+}
+
+.socialmediaContent a:hover {
+    opacity: 0.8;
+    color: #111;
+}

@@ -1,0 +1,21 @@
+.cardItem__wrapper {
+    margin-bottom: 105px;
+}
+
+.cardItem {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .cardItem {
+        justify-content: center;
+        gap: 10px;
+    }
+    .cardItem__wrapper {
+        margin-bottom: 50px;
+    }
+}

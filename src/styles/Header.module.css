@@ -1,0 +1,72 @@
+
+.header {
+    background-color: #A5C926;
+}
+
+.nav {
+    background-color: #FFFFFF;
+}
+
+.contactContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0 8px 15px;
+}
+
+.contacts {
+    display: flex;
+    gap: 16px;
+}
+
+.contacts a {
+    font-weight: 400;
+    font-size: 10px;
+    color: #fff;
+    transition: all .3s linear;
+}
+
+.contacts a:hover {
+    opacity: 0.8;
+    color: #111;
+}
+
+.navAndCartContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 20px 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__title {
+    font-weight: 400;
+    font-size: 21px;
+    font-family: "Varela Round", sans-serif; 
+    line-height: 1.5;
+    color: #333333;
+    margin-right: 15px;
+    transition: all .3s linear;
+}
+
+.logo__title:hover {
+    color: #A5C926;
+}
+
+@media screen and (max-width: 768px) {
+    .contactContent, .navAndCartContent {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactContent {
+        gap: 10px;
+    }
+
+    .logo {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,23 @@
+.navigation {
+    padding: 12px 42px;
+}
+
+.navigation a {
+    padding: 12px 18px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #111;
+    transition: all .3s linear;
+}
+.navigation a:hover {
+    background-color: #A5C926;
+    color: #fff;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,57 @@
+footer {
+    background-color: #A5C926;
+}
+
+.footer__wrapper {
+    padding-top: 48px;
+    padding-bottom: 31px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 47px;
+}
+
+.logo__title {
+    font-weight: 400;
+    font-size: 21px;
+    font-family: "Varela Round", sans-serif;
+    color: #fff;
+}
+
+.footer__under {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    border-top: 1px solid #ddd;
+    padding-top: 33px;
+}
+
+.created span {
+    font-weight: 400;
+    font-size: 11px;
+}
+
+.powered {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 11px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .content {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer__under {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

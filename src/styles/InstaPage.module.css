@@ -1,0 +1,55 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px 0;
+}
+
+.content__text {
+    margin-bottom: 85px;
+}
+
+.content__text h6 {
+    font-weight: 400;
+    font-size: 13px;
+    color: #A5C926;
+    margin-bottom: 17px;
+    text-align: center;
+}
+
+.content__text h2 {
+    font-weight: 400;
+    font-size: 31px;
+    font-family: "Varela Round", sans-serif;
+}
+
+.content__item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 76px;
+}
+
+.content__link {
+    border-radius: 24px;
+    background-color: #A5C926;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 28px;
+    opacity: 1;
+    transition: all .3s linear;
+}
+.content__link:hover {
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width: 768px) {
+ .content__item {
+   justify-content: center;
+ }
+}

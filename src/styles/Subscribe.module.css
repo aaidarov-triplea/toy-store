@@ -49,6 +49,7 @@
     border: none;
     padding: 11px 10px;
     outline: none;
+    width: 100%;
 }
 
 .submit__btn {
